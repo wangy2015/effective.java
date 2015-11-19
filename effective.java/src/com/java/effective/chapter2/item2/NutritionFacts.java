@@ -1,4 +1,4 @@
-package com.java.effective.chapter2.item1;
+package com.java.effective.chapter2.item2;
 
 /**
  * Created by ÍõÓÂ on 2015/11/19.
