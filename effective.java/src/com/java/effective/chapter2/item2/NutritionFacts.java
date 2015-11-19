@@ -10,6 +10,7 @@ public class NutritionFacts {
     private final int fat;
     private final int sodium;
     private final int carbohydrate;
+
     public static class Builder {
         // Required parameters
         private final int servingSize;
