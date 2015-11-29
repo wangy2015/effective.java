@@ -1,7 +1,7 @@
 package com.java.effective.chapter2.item2;
 
 /**
- * Created by ÍõÓÂ on 2015/11/19.
+ * Created by ç‹å‹‡ on 2015/11/19.
  */
 public class NutritionFacts {
     private final int servingSize;

@@ -1,8 +1,8 @@
 package com.java.effective.chapter2.item3;
 
 /**
- * Created by 王勇 on 2015/11/19.
- * 枚举实现单例
+ * Created by 鐜嬪媷 on 2015/11/19.
+ * 鏋氫妇瀹炵幇鍗曚緥
  */
 public enum ElvisEnum {
     INSTANCE;

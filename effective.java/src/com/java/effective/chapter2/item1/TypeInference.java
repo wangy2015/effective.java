@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ÍõÓÂ on 2015/11/19.
+ * Created by ç‹å‹‡ on 2015/11/19.
  */
 public class TypeInference {
     public static <K, V> HashMap<K, V> newHashMap() {
@@ -31,9 +31,9 @@ public class TypeInference {
         Map<String, String> map = TypeInference.newHashMap();
         map.put("key", "value");
         System.out.println(map);
-        // ±àÒë´íÎó£¬ÒòÎªStringÊÇObjectµÄ×ÓÀà¶øList<String>²»ÊÇList<Object>µÄ×ÓÀà
+        // ç¼–è¯‘é”™è¯¯ï¼Œå› ä¸ºStringæ˜¯Objectçš„å­ç±»è€ŒList<String>ä¸æ˜¯List<Object>çš„å­ç±»
         // TypeInference.testList(new ArrayList<String>());
-        // Ê¹ÓÃ·ºĞÍ±àÒëÍ¨¹ı
+        // ä½¿ç”¨æ³›å‹ç¼–è¯‘é€šè¿‡
         TypeInference.testGenricList(new ArrayList<String>(), new ArrayList<Integer>(), new ArrayList<String>());
     }
 }

@@ -3,8 +3,8 @@ package com.java.effective.chapter2.item3;
 import java.io.*;
 
 /**
- * Created by ÍõÓÂ on 2015/11/19.
- * Ë½ÓĞ¹¹ÔìÆ÷ÊµÏÖµ¥Àı£¬²¢ĞòÁĞ»¯
+ * Created by ç‹å‹‡ on 2015/11/19.
+ * ç§æœ‰æ„é€ å™¨å®ç°å•ä¾‹ï¼Œå¹¶åºåˆ—åŒ–
  */
 public class Elvis implements Serializable {
     private static final Elvis INSTANCE = new Elvis();
@@ -18,7 +18,7 @@ public class Elvis implements Serializable {
         System.out.println(cnt);
     }
 
-    // µ¥ÀıĞòÁĞ»¯ĞèÒªÊµÏÖ´Ë·½·¨
+    // å•ä¾‹åºåˆ—åŒ–éœ€è¦å®ç°æ­¤æ–¹æ³•
     private Object readResolve() throws ObjectStreamException {
         // instead of the object we're on,
         // return the class variable INSTANCE
@@ -31,17 +31,17 @@ public class Elvis implements Serializable {
         elvis.cnt++;
         elvis = Elvis.getInstance();
         elvis.printCnt();
-        // ĞòÁĞ»¯²âÊÔ
+        // åºåˆ—åŒ–æµ‹è¯•
         try {
-            // ĞòÁĞ»¯
+            // åºåˆ—åŒ–
             ObjectOutputStream ut = new ObjectOutputStream(new FileOutputStream("D:/objectfile.obj"));
             ut.writeObject(elvis);
-            // ·´ĞòÁĞ»¯
+            // ååºåˆ—åŒ–
             ObjectInputStream in = new ObjectInputStream(new FileInputStream("D:/objectfile.obj"));
             Elvis elvisDisk = (Elvis)in.readObject();
-            // cnt²»±ä
+            // cntä¸å˜
             elvisDisk.printCnt();
-            // ¼ÓreadResolveÖ®Ç°²»ÏàµÈ£¬¼ÓreadResolveÖ®ºóÏàµÈ
+            // åŠ readResolveä¹‹å‰ä¸ç›¸ç­‰ï¼ŒåŠ readResolveä¹‹åç›¸ç­‰
             System.out.println(elvis == elvisDisk);
         } catch (IOException e) {
             e.printStackTrace();
