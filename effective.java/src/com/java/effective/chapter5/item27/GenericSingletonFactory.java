@@ -7,6 +7,7 @@ package com.java.effective.chapter5.item27;
  */
 public class GenericSingletonFactory {
 
+    // 泛型单例
     private static UnaryFunction<Object> IDENTITY_FUNCTION = new UnaryFunction<Object>() {
         @Override
         public Object apply(Object arg) {
