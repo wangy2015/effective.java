@@ -1,4 +1,4 @@
-package com.java.effective.chapter5.item30;
+package com.java.effective.chapter6.item30;
 
 /**
  * 特定于常量的方法实现
@@ -13,6 +13,6 @@ public enum Operation {
     abstract double apply(double x, double y);
 
     public static void main(String[] args) {
-        System.out.println(Operation.PLUS.apply(1, 2));
+        System.out.println(com.java.effective.chapter5.item30.Operation.PLUS.apply(1, 2));
     }
 }

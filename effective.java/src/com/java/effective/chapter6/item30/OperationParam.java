@@ -1,4 +1,4 @@
-package com.java.effective.chapter5.item30;
+package com.java.effective.chapter6.item30;
 
 /**
  * 特定于常量的方法实现与特定于常量的数据结合起来
@@ -28,6 +28,6 @@ public enum OperationParam {
             System.out.printf("%f %s %f = %f%n", x, op, y, op.apply(x, y));
         }
         // valueOf方法，将字符串转为枚举常量
-        System.out.println(OperationParam.valueOf("PLUS"));
+        System.out.println(com.java.effective.chapter5.item30.OperationParam.valueOf("PLUS"));
     }
 }
